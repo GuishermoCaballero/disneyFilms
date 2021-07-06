@@ -1,0 +1,192 @@
+@mixin centered() {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+}
+
+$red: #C00003;
+
+@keyframes body {
+    from { background-color: $red; }
+    to { background-color: black; }
+}
+
+body {
+    background-color: $red;
+    animation: body 1s forwards ease-in-out;
+    animation-delay: 2s;
+}
+
+#logo {
+    width: 50%;
+    height: 350px;
+    @include centered();
+    
+    @keyframes background-ellipse {
+        from { 
+            background: black;
+            box-shadow: none;
+        }
+        to {
+            box-shadow: 0 0 1000px 30px $red;
+            // @Javierismo
+            background: -moz-radial-gradient(50% 0%, circle cover, #FEF86D 31%, #C2551A 81%);
+            background: -webkit-radial-gradient(50% 0%, circle cover, #FEF86D 31%, #C2551A 81%);
+            background: -o-radial-gradient(50% 0%, circle cover, #FEF86D 31%, #C2551A 81%);
+            background: -ms-radial-gradient(50% 0%, circle cover, #FEF86D 31%, #C2551A 81%);
+            background: radial-gradient(50% 0%, circle cover, #FEF86D 31%, #C2551A 81%);
+        }
+    }
+    
+    #background-ellipse {
+        width: 420px;
+        height: 280px;
+        background: black;
+        border-radius: 50%;
+        @include centered();
+        animation: background-ellipse 1s forwards ease-in-out;
+        animation-delay: 2s;
+        
+        .inner-ellipse {
+            $elipse-width: 320px;
+            $elipse-height: 205px;
+            width: $elipse-width;
+            height: $elipse-height;
+            background-color: transparent;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            margin: auto;
+            left: 0; right: 0;
+            
+            @keyframes fill {
+                from { background-color: $red; }
+                to { background-color: black; }
+            }
+
+            .fill {
+                width: 0.5 * $elipse-width;
+                height: $elipse-height;
+                background-color: $red;
+                position: absolute;
+                animation: fill 1s forwards ease-in-out;
+                animation-delay: 2s;
+            }
+            
+            .fill.left { left: 0; }
+            .fill.right { right: 0; }
+        }
+        
+        .inner-ellipse.left { bottom: 15px; }
+        .inner-ellipse.right { top: 15px; }
+        
+        @keyframes point {
+            from { background-color: black; }
+            to { background-color: #FDFE66; }
+        }
+        
+        #point {
+            width: 110px;
+            height: 110px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            left: 0; right: 0;
+            top: -25px;
+            margin: auto;
+            animation: point 1s forwards ease-in-out;
+            animation-delay: 2s;
+            
+            @keyframes inner-point {
+                0% { 
+                    background-color: transparent;
+                    box-shadow: none;
+                }
+                2% {
+                    background-color: #FFFFFF;
+                }
+                15% {
+                    background-color: #FFFFFF;
+                    box-shadow:
+                        0 0 100px 150px #FEFEFE,  
+                        0 0 200px 250px #FCD361,  
+                        0 0 300px 350px #BE4A05;              }
+                35%, 100% {
+                    background-color: white;
+                    box-shadow: 2px 2px 2px 1px #666666;
+                }
+            }
+            
+            #inner-point {
+                width: 50px;
+                height: 50px;
+                z-index: 9999;
+                border-radius: 50%;
+                @include centered();
+                background-color: transparent;
+                animation: inner-point 2s forwards ease-in-out;
+                animation-delay: 2s;
+
+            }
+        }
+        
+        #bar {
+            width: 90px;
+            height: 130px;
+            background-color: black;
+            position: absolute;
+            left: 0; right: 0;
+            margin: auto;
+            bottom: 2px;
+            animation: point 1s forwards ease-in-out;
+            animation-delay: 2s;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            
+            @keyframes tip {
+                from { border-color: transparent transparent black transparent; }
+                to { border-color: transparent transparent #FDFE66 transparent; }
+            }
+            
+            #tip {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 0 30px 90px;
+                border-color: transparent transparent black transparent;
+                position: absolute;
+                top: -30px;
+                animation: tip 1s forwards ease-in-out;
+                animation-delay: 2s;
+            }
+            
+            @keyframes first {
+                0% { 
+                    height: 0px;
+                    background-color: $red;
+                }
+                50% { 
+                    height: 160px; 
+                    background-color: $red;
+                }
+                100% {
+                    height: 160px; 
+                    background-color: black;
+                }
+            }
+            
+            #inner-bar {
+                width: 10px;
+                height: 0px;
+                background-color: $red;
+                position: absolute;
+                left: 0; right: 0;
+                bottom: -2px;
+                margin: auto;
+                animation: first 2s ease-in-out forwards;
+                animation-delay: 1s;
+            }
+        }
+    } 
+}

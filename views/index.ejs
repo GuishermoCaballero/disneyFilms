@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <title>World Wines</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.5/examples/album/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      body{
+  background-color:white;
+}
+.hcircle {
+    width: 500px;
+    height:280px;
+    border-top-left-radius: 600px;           border-top-right-radius: 600px; 
+    border: 9px solid #216dd5;
+    border-bottom: 0px;
+    margin-left:150px;
+    margin-top:90px;
+   animation:load 0.7s linear infinite;
+}
+.circle{
+  width:80px;
+  height:80px;
+  border-radius:100px;
+  border:2px solid white;
+  margin-top:-300px;
+  margin-left:390px;
+  background-color:white;
+  animation:load 1s linear infinite;
+}
+.tria{
+  width:0px;
+	height:0px;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 70px solid #216dd5;
+  margin-top:1px;
+  transform:rotate(-0deg);
+  transform-origin:right 90px;
+  margin-left:15px;
+}
+.tri{
+  width:0px;
+	height:0px;
+	border-top: 10px solid transparent;
+	border-right: 10px solid #216dd5;
+	border-bottom: 10px solid transparent;
+  margin-top:-70px;
+  margin-left:20px;
+}
+@keyframes load{
+   0%{
+    transform:translateY(0);
+  }
+    50%{
+    transform:translateY(-10px);
+  }
+    100%{
+    transform:translateY(0);
+  }
+}
+.main{
+  width:45px;
+  height:45px;
+  border:2px solid #216dd5;
+  margin-left:406px;
+  margin-left:406px;
+  background-color:#216dd5;
+  border-radius:5px;
+  }
+.middle{
+  width:55px;
+  height:10px;
+  border:2px solid #216dd5;
+  border-radius:10px;
+  margin-left:401px;
+  margin-top:-30px;
+  background-color:#216dd5;
+}
+.square{
+  width:45px;
+  height:40px;
+  border:2px solid #216dd5;
+  background-color:#216dd5;
+  border-radius:5px;
+  margin-left:406px;
+  margin-top:22px;
+  }
+.rec{
+  width:100px;
+  height:20px;
+  border:2px solid #216dd5;
+  background-color:#216dd5;
+  border-radius:10px;
+  margin-left:352px;
+  margin-top:-6px;
+ }
+.tangle{
+  width: 0px;
+	height: 0px;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 50px solid #216dd5;
+  margin-left:351px;
+  margin-top:-81px;
+}
+.ti{
+  width:0px;
+	height:0px;
+	border-top: 10px solid transparent;
+	border-right: 10px solid #216dd5;
+	border-bottom: 10px solid transparent;
+  margin-top:-75px;
+  margin-left:360px;
+}
+.tie{
+  width:0px;
+	height:0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 30px solid #216dd5;
+  margin-left:320px;
+  margin-top:60px;
+}
+.rct{
+  width:115px;
+  height:15px;
+  border:2px solid #216dd5;
+  border-radius:3px;
+  background-color:#216dd5;
+  margin-left:345px;
+  margin-top:-20px;
+}
+.sq{
+  width:30px;
+  height:25px;
+  border:2px solid #216dd5;
+  background-color:#216dd5;
+  margin-left:470px;
+  margin-top:-29px;
+  border-radius:3px;
+}
+.trr{
+  width:0px;
+  height:0px;
+  border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 25px solid #216dd5; 
+  margin-left:470px;
+  margin-top:-65px;
+  }
+.tp{
+  width:0px;
+	height:0px;
+	border-top: 10px solid transparent;
+	border-right: 10px solid #216dd5;
+	border-bottom: 10px solid transparent;
+  margin-top:-50px;
+  margin-left:472px;
+}
+.ttt{
+  width: 0px;
+	height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid #216dd5;
+  margin-left:270px;
+  margin-top:29px;
+  }
+.rectt{
+  width:220px;
+  height:15px;
+  border:2px solid #216dd5;
+  background-color:#216dd5;
+  margin-left:300px;
+  margin-top:-12px;
+  }
+.trt{
+  width: 0px;
+	height: 0px;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 50px solid #216dd5;
+  margin-left:530px;
+  margin-top:-52px;
+  }
+.tpt{
+   width:0px;
+	height:0px;
+	border-top: 10px solid transparent;
+	border-right: 10px solid #216dd5;
+	border-bottom: 10px solid transparent;
+  margin-top:-50px;
+  margin-left:530px;
+}
+.five{
+  width:340px;
+  height:10px;
+  border:2px solid #216dd5;
+  border-radius:3px;
+  background-color:#216dd5;
+  margin-left:245px;
+  margin-top:33px;
+}
+.six{
+  width:300px;
+  height:10px;
+  border:2px solid #216dd5;
+  border-radius:3px;
+  background-color:#216dd5;
+  margin-left:265px;
+  margin-top:7px;
+  }
+.seven{
+   width:300px;
+  height:10px;
+  border:2px solid #216dd5;
+  border-radius:3px;
+  background-color:#216dd5;
+  margin-left:265px;
+  margin-top:7px;
+  }
+.crc{
+  width:90px;
+  height:90px;
+  border-radius:100px;
+  border:2px solid white;
+  margin-top:-50px;
+  margin-left:375px;
+  background-color:white;
+}
+.two,.four{
+   animation:move 1s infinite linear;
+}
+@keyframes move
+{
+  0%{
+    transform:translateX(0);
+  }
+    50%{
+    transform:translateX(-10px);
+  }
+    100%{
+    transform:translateX(0);
+  
+  }
+}
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/album.css" rel="stylesheet" />
+  </head>
+  <body>
+    <%- include('common/header'); -%>
+
+    
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1>Disney Films WIKI</h1>
+          <main role="main">
+      <div >
+        <div class="hcircle"></div>
+<div class="circle">
+  <div class="tria"></div>
+  <div class="tri"></div>
+</div>
+<div class="one">
+  <div class="main"></div>
+  <div class="middle"></div>
+</div>
+<div class="two">
+  <div class="square"></div>
+  <div class="rec"></div>
+  <div class="tangle"></div>
+  <div class="ti"></div>
+</div>
+<div class="three">
+  <div class="tie"></div>
+  <div class="rct"></div>
+  <div class="sq"></div>
+  <div class="trr"></div>
+  <div class="tp"></div>
+</div>
+<div class="four">
+  <div class="ttt"></div>
+  <div class="topt"></div>
+  <div class="rectt"></div>
+  <div class="trt"></div>
+  <div class="tpt"></div>
+</div>
+<div class="five"></div>
+<div class="six"></div>
+<div class="seven"></div>
+<div class="crc"></div>
+      </div>
+          
+          <h2>
+            Welcome to the Official Disney Films Wiki!!
+          </h2>
+          <h1 class="lead text-muted">Feel free to add, edit, delete, explore!!!!</h1>
+        </div>
+      </section>
+
+      
+    </main>
+
+    <%- include('common/footer') -%>
+  </body>
+</html>
