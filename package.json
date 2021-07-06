@@ -3,6 +3,9 @@
     "start": "node app.js",
     "dev": "nodemon app.js"    
 },
+    "engines": {
+    "node": "14.x"
+  },
   "name": "assessment",
   "version": "1.0.0",
   "main": "dataReader.js",
