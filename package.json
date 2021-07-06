@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"    
+},
   "name": "assessment",
   "version": "1.0.0",
   "main": "dataReader.js",
@@ -17,9 +21,6 @@
     "mongoose-long": "^0.4.0"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
