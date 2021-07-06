@@ -3,11 +3,14 @@ const fs = require("fs").promises;
 const commaNumber = require("comma-number");
 
 /**constants */
-const url = "mongodb://localhost:27017";
+const uri = "mongodb+srv://admin:admin@disneycluster.jbdzb.mongodb.net/disneyFilms?retryWrites=true&w=majority";
+
+//const url = "mongodb://localhost:27017";
 const dbName = "disneyFilms";
 const collectionName = "users";
 const fileName = "users.json";
-const client = new MongoClient(url, { useNewUrlParser: true });
+//const client = new MongoClient(url, { useNewUrlParser: true });
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true});
 
 async function main() {
     try {
