@@ -1,0 +1,17 @@
+[
+  {
+    "email": "guillermocaballeromassa@gmail.com",
+    "password": "1234",
+    "country": "Spain",
+    "age": 21
+
+    
+  },
+  {
+    "email": "caballero_massa@gmail.com",
+    "password": "1234",
+    "country": "United Kingdom",
+    "age": 17
+
+    
+  }]
